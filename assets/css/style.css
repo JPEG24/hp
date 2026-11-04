@@ -146,8 +146,164 @@ h2 {
 }
 
 /* =========================
-   Dark mode
+   GitHub Light syntax highlighting
    ========================= */
+
+.highlight .c,
+.highlight .c1,
+.highlight .cm,
+.highlight .cp,
+.highlight .cs {
+  color: #6e7781;
+}
+
+.highlight .k,
+.highlight .kd,
+.highlight .kn,
+.highlight .kp,
+.highlight .kr,
+.highlight .o,
+.highlight .ow {
+  color: #cf222e;
+}
+
+.highlight .kt,
+.highlight .nc,
+.highlight .nn {
+  color: #953800;
+}
+
+.highlight .nf,
+.highlight .fm {
+  color: #8250df;
+}
+
+.highlight .na {
+  color: #0550ae;
+}
+
+.highlight .s,
+.highlight .s1,
+.highlight .s2,
+.highlight .sb,
+.highlight .sc,
+.highlight .dl {
+  color: #0a3069;
+}
+
+.highlight .m,
+.highlight .mi,
+.highlight .mf,
+.highlight .mh,
+.highlight .mo {
+  color: #0550ae;
+}
+
+.highlight .nb,
+.highlight .bp {
+  color: #953800;
+}
+
+.highlight .no {
+  color: #0550ae;
+}
+
+.highlight .nv,
+.highlight .vi,
+.highlight .vg {
+  color: #953800;
+}
+
+.highlight .gd {
+  color: #82071e;
+  background: #ffebe9;
+}
+
+.highlight .gi {
+  color: #116329;
+  background: #dafbe1;
+}
+
+/* =========================
+   GitHub Dark syntax highlighting
+   ========================= */
+
+@media (prefers-color-scheme: dark) {
+  .highlight .c,
+  .highlight .c1,
+  .highlight .cm,
+  .highlight .cp,
+  .highlight .cs {
+    color: #8b949e;
+  }
+
+  .highlight .k,
+  .highlight .kd,
+  .highlight .kn,
+  .highlight .kp,
+  .highlight .kr,
+  .highlight .o,
+  .highlight .ow {
+    color: #ff7b72;
+  }
+
+  .highlight .kt,
+  .highlight .nc,
+  .highlight .nn {
+    color: #ffa657;
+  }
+
+  .highlight .nf,
+  .highlight .fm {
+    color: #d2a8ff;
+  }
+
+  .highlight .na {
+    color: #79c0ff;
+  }
+
+  .highlight .s,
+  .highlight .s1,
+  .highlight .s2,
+  .highlight .sb,
+  .highlight .sc,
+  .highlight .dl {
+    color: #a5d6ff;
+  }
+
+  .highlight .m,
+  .highlight .mi,
+  .highlight .mf,
+  .highlight .mh,
+  .highlight .mo {
+    color: #79c0ff;
+  }
+
+  .highlight .nb,
+  .highlight .bp {
+    color: #ffa657;
+  }
+
+  .highlight .no {
+    color: #79c0ff;
+  }
+
+  .highlight .nv,
+  .highlight .vi,
+  .highlight .vg {
+    color: #ffa657;
+  }
+
+  .highlight .gd {
+    color: #ffa198;
+    background: #490202;
+  }
+
+  .highlight .gi {
+    color: #7ee787;
+    background: #04260f;
+  }
+}
 
 @media (prefers-color-scheme: dark) {
   :root {

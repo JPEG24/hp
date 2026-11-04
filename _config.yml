@@ -4,6 +4,7 @@ baseurl: "/hp"
 repository: "JPEG24/hp"
 
 markdown: kramdown
+highlighter: rouge
 theme: minima
 plugins:
   - jekyll-feed
