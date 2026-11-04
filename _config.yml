@@ -1,7 +1,7 @@
 title: HP
 description: 
-url: ""
-baseurl: ""
+url: "https://JPEG24.github.io"
+baseurl: "/hp"
 repository: "JPEG24/hp"
 
 markdown: kramdown
