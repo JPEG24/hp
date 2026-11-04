@@ -1,15 +1,6 @@
----
----
-
-:root {
-  --ink: #243442;
-  --muted: #71808d;
-  --paper: #f6f7f5;
-  --surface: #ffffff;
-  --line: #dfe5e5;
-  --accent: #9b0f0f;
-  --code-bg: #f0f2f2;
-}
+/* =========================
+   Base
+   ========================= */
 
 * { box-sizing: border-box; }
 
@@ -148,6 +139,20 @@ h2 {
 }
 
 /* =========================
+   Light mode
+   ========================= */
+
+:root {
+  --ink: #243442;
+  --muted: #71808d;
+  --paper: #f6f7f5;
+  --surface: #ffffff;
+  --line: #dfe5e5;
+  --accent: #9b0f0f;
+  --code-bg: #f0f2f2;
+}
+
+/* =========================
    GitHub Light syntax highlighting
    ========================= */
 
@@ -224,6 +229,24 @@ h2 {
 .highlight .gi {
   color: #116329;
   background: #dafbe1;
+}
+
+/* =========================
+   Dark mode
+   ========================= */
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+
+    --ink: #e1e8ec;
+    --muted: #9baab5;
+    --paper: #151c22;
+    --surface: #1e2932;
+    --line: #35434d;
+    --accent: #e58b8b;
+    --code-bg: #26343e;
+  }
 }
 
 /* =========================
@@ -304,19 +327,5 @@ h2 {
   .highlight .gi {
     color: #7ee787;
     background: #04260f;
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    color-scheme: dark;
-
-    --ink: #e1e8ec;
-    --muted: #9baab5;
-    --paper: #151c22;
-    --surface: #1e2932;
-    --line: #35434d;
-    --accent: #e58b8b;
-    --code-bg: #26343e;
   }
 }
