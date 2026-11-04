@@ -1,0 +1,22 @@
+title: HP
+description: 
+url: ""
+baseurl: ""
+repository: "JPEG24/hp"
+
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+
+permalink: /:categories/:year/:month/:day/:title/
+
+header_pages:
+  - about.md
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post

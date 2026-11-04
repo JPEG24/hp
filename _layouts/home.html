@@ -1,0 +1,18 @@
+---
+layout: default
+---
+
+{{ content }}
+
+<h2>記事一覧</h2>
+<ul class="post-list">
+  {% for post in site.posts %}
+    <li>
+      <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y年%m月%d日" }}</time>
+      <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+      {% if post.excerpt %}<p>{{ post.excerpt | strip_html | truncate: 120 }}</p>{% endif %}
+    </li>
+  {% else %}
+    <li>まだ記事はありません。</li>
+  {% endfor %}
+</ul>
