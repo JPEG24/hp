@@ -4,7 +4,7 @@
   --paper: #f6f7f5;
   --surface: #ffffff;
   --line: #dfe5e5;
-  --accent: #ad694b;
+  --accent: #9b0f0f;
 }
 
 * { box-sizing: border-box; }
@@ -13,7 +13,7 @@ body {
   margin: 0;
   background: var(--paper);
   color: var(--ink);
-  font-family: -apple-system, BlinkMacSystemFont, "Yu Gothic", Meiryo, sans-serif;
+  font-family: "Noto Sans JP", sans-serif;
   line-height: 1.9;
 }
 a { color: var(--accent); }
@@ -28,12 +28,12 @@ a { color: var(--accent); }
   padding: 25px 0;
   border-bottom: 1px solid var(--line);
 }
-.site-title { color: var(--ink); text-decoration: none; font: 24px Georgia, serif; letter-spacing: .12em; }
+.site-title { color: var(--ink); text-decoration: none; font-size: 24px; letter-spacing: .12em; }
 .site-header nav a { color: var(--muted); font-size: 13px; text-decoration: none; }
 .site-main { min-height: 70vh; padding: 55px 0 80px; }
 .home-intro { margin-bottom: 55px; }
 .eyebrow { color: var(--accent); font-size: 11px; letter-spacing: .16em; }
-h1, h2, h3 { font-family: Georgia, "Yu Mincho", serif; font-weight: 500; line-height: 1.5; }
+h1, h2, h3 { font-weight: 500; line-height: 1.5; }
 h1 { font-size: clamp(30px, 5vw, 44px); }
 h2 { margin-top: 2.5em; border-bottom: 1px solid var(--line); padding-bottom: .4em; }
 .post-list { list-style: none; padding: 0; }
