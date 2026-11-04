@@ -9,7 +9,7 @@ theme: minima
 plugins:
   - jekyll-feed
 
-permalink: /:categories/:year/:month/:day/:title/
+permalink: /posts/:title/
 
 header_pages:
   - about.md
