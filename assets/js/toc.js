@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (!content || !toc) return;
 
-  const headings = content.querySelectorAll("h2, h3");
+  const headings = content.querySelectorAll("h1, h2, h3");
 
   headings.forEach((heading, index) => {
     if (!heading.id) {
@@ -15,11 +15,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const a = document.createElement("a");
 
     a.href = `#${heading.id}`;
-    a.textContent = heading.textContent;
+    a.innerHTML = heading.innerHTML;
 
-    if (heading.tagName === "H3") {
-      li.classList.add("toc-h3");
-    }
+    li.classList.add(`toc-${heading.tagName.toLowerCase()}`);
 
     li.appendChild(a);
     toc.appendChild(li);
