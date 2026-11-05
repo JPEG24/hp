@@ -16,6 +16,16 @@ document.addEventListener("DOMContentLoaded", async () => {
     if (rating < 2800) return "#FF8000";
     return "#FF0000";
   };
+  const getColorDark = rating => {
+    if (rating < 400) return "#808080";
+    if (rating < 800) return "#9a6324";
+    if (rating < 1200) return "#18794e";
+    if (rating < 1600) return "#00b8d4";
+    if (rating < 2000) return "#2463d4";
+    if (rating < 2400) return "#e6c700";
+    if (rating < 2800) return "#ed8617";
+    return "#d83232";
+  };
 
   try {
     const response = await fetch("/api/rating");
@@ -33,7 +43,8 @@ document.addEventListener("DOMContentLoaded", async () => {
         element.textContent = "Unrated";
       } else {
         element.textContent = rating;
-        element.style.color = getColor(rating);
+        const isDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        element.style.color = isDarkMode ? getColorDark(rating) : getColor(rating);
 				element.style.fontFamily = '"Squada One", sans-serif';
 				element.style.fontSize = "30px";
       }
