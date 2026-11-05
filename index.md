@@ -5,8 +5,6 @@ title: ホーム
 
 競技プログラミングをしています！
 
-AtCoder Rating
+AtCoder Algorithm <span id="atcoder-algo">Loading...</span>
 
-- Algorithm <span id="atcoder-algo">Loading...</span>
-
-- Heuristic <span id="atcoder-heur">Loading...</span>
+AtCoder Heuristic <span id="atcoder-heur">Loading...</span>
