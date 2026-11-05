@@ -5,5 +5,4 @@ title: ホーム
 
 競技プログラミングをしています！
 
-<img src="https://atcoder-disp-graph.tra.earth/disp-rate/WebP?contest-type=algo&graph-type=status" width="80%" height="auto" alt="AtCoder Status" />
-<img src="https://atcoder-disp-graph.tra.earth/disp-rate/WebP?contest-type=algo&graph-type=graph" width="80%" height="auto" alt="AtCoder Rating" />
+AtCoder Rating: <span id="atcoder-rating">Loading...</span>
