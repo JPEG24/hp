@@ -8,9 +8,11 @@ title: ホーム
 # Ratings
 <ul class="rating-list">
   <li class="rating-row">
-    AtCoder Algorithm <span id="atcoder-algo">Loading...</span>
+    <span>AtCoder Algorithm</span>
+    <span id="atcoder-algo">Loading...</span>
   </li>
   <li class="rating-row">
-    AtCoder Heuristic <span id="atcoder-heur">Loading...</span>
+    <span>AtCoder Heuristic</span>
+    <span id="atcoder-heur">Loading...</span>
   </li>
 </ul>
