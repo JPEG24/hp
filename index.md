@@ -5,7 +5,8 @@ title: ホーム
 
 競技プログラミングをしています！
 
-<ul>
+# Ratings
+<ul class="rating-list">
   <li class="rating-row">
     AtCoder Algorithm <span id="atcoder-algo">Loading...</span>
   </li>

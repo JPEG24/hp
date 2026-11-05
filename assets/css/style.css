@@ -104,7 +104,7 @@ h2 {
    Home
    ========================= */
 
-ul {
+.rating-list {
   list-style-type: disc;
   padding-left: 24px;
 }
