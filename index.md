@@ -20,8 +20,6 @@ title: ホーム
 # Works
 - [cp-library](https://github.com/JPEG24/cp-library)
 
-競プロのライブラリです。自分もあんまり使ってません。
-
 # Links
 <ul>
   <li><a href="https://x.com/tgnfoh" target="_blank" rel="noopener noreferrer">X</a></li>
