@@ -4,7 +4,7 @@ title: このページについて
 permalink: /about/
 ---
 
-# Technical
+# Tech Stack
 
 - **Jekyll**：静的サイトジェネレーター
 	- **Kramdown**：Markdown を HTML へ変換
