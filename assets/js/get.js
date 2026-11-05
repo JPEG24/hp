@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         element.textContent = rating;
         element.style.color = getColor(rating);
 				element.style.fontFamily = '"Squada One", sans-serif';
-				element.style.fontSize = "20px";
+				element.style.fontSize = "30px";
       }
 		}
   } catch (error) {

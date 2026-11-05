@@ -5,6 +5,12 @@ title: ホーム
 
 競技プログラミングをしています！
 
-AtCoder Algorithm <span id="atcoder-algo">Loading...</span>
+<div class="rating-row">
+  <span>AtCoder Algorithm</span>
+  <span id="atcoder-algo">Loading...</span>
+</div>
 
-AtCoder Heuristic <span id="atcoder-heur">Loading...</span>
+<div class="rating-row">
+  <span>AtCoder Heuristic</span>
+  <span id="atcoder-heur">Loading...</span>
+</div>

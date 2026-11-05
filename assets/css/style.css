@@ -104,6 +104,13 @@ h2 {
    Home
    ========================= */
 
+.rating-row {
+  display: grid;
+  grid-template-columns: 210px auto;
+  align-items: baseline;
+  gap: 8px;
+}
+
 .post-list {
   list-style: none;
   padding: 0;
