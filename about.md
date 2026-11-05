@@ -4,8 +4,9 @@ title: このページについて
 permalink: /about/
 ---
 
-ChatGPT に作らせたサイトです。
+# Technical
 
-このサイトは Jekyll で構築されており、Vercel でホストされています。
+- **Jekyll**：Markdown から HTML を生成
+- **Vercel**：サイトの公開
 
-[Github](https://github.com/JPEG24/hp)
+[Github Repository](https://github.com/JPEG24/hp)
