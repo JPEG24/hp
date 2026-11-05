@@ -123,6 +123,10 @@ h2 {
   padding: 16px 24px;
 }
 
+.post-list h2 {
+  margin-top: 0;
+}
+
 .post-list li {
   padding: 18px 0;
   border-bottom: 1px solid var(--line);
