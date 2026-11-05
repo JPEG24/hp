@@ -15,7 +15,14 @@ document.addEventListener("DOMContentLoaded", () => {
     const a = document.createElement("a");
 
     a.href = `#${heading.id}`;
-    a.innerHTML = heading.innerHTML;
+
+    const clonedHeading = heading.cloneNode(true);
+
+    clonedHeading.querySelectorAll("a").forEach(link => {
+      link.replaceWith(...link.childNodes);
+    });
+
+    a.innerHTML = clonedHeading.innerHTML;
 
     li.classList.add(`toc-${heading.tagName.toLowerCase()}`);
 
