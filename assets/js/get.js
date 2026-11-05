@@ -11,10 +11,16 @@ document.addEventListener("DOMContentLoaded", async () => {
     }
 
     const data = await response.json();
+    const rating = data.rating;
 
-    ratingElement.textContent = data.rating ?? "Unrated";
+    if (rating === null) {
+      ratingElement.textContent = "Unrated";
+      return;
+    }
 
-		const colors = [
+    ratingElement.textContent = rating;
+
+    const colors = [
       [400, "#808080"],
       [800, "#804000"],
       [1200, "#008000"],
