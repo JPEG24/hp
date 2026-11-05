@@ -118,6 +118,7 @@ h2 {
 
 .post-list {
   list-style: none;
+  border: solid 1px var(--line);
   padding: 0;
 }
 

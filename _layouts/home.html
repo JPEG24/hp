@@ -4,8 +4,9 @@ layout: default
 
 {{ content }}
 
+<div class="post-list">
 <h2>記事一覧</h2>
-<ul class="post-list">
+<ul>
   {% for post in site.posts %}
     <li>
       <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y年%m月%d日" }}</time>
@@ -16,3 +17,4 @@ layout: default
     <li>まだ記事はありません。</li>
   {% endfor %}
 </ul>
+</div>
