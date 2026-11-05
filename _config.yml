@@ -1,6 +1,6 @@
 title: HP
 url: "https://jpeg24.vercel.app/"
-baseurl: "/hp"
+baseurl: ""
 repository: "JPEG24/hp"
 
 markdown: kramdown
