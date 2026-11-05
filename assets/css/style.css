@@ -108,11 +108,9 @@ h2 {
   padding-left: 24px;
 }
 
-.rating-row {
-  display: grid;
-  grid-template-columns: 150px auto;
-  align-items: baseline;
-  gap: 8px;
+.rating-row span:first-child {
+  display: inline-block;
+  width: 150px;
 }
 
 .post-list {
