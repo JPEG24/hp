@@ -7,6 +7,6 @@ title: ホーム
 
 AtCoder Rating
 
-- Algorithm: <span id="atcoder-algo">Loading...</span>
+- Algorithm <span id="atcoder-algo">Loading...</span>
 
-- Heuristic: <span id="atcoder-heur">Loading...</span>
+- Heuristic <span id="atcoder-heur">Loading...</span>

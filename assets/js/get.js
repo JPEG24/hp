@@ -34,6 +34,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       } else {
         element.textContent = rating;
         element.style.color = getColor(rating);
+				element.style.fontWeight = "bold";
       }
     }
   } catch (error) {
