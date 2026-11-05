@@ -15,3 +15,9 @@ title: ホーム
     <span id="atcoder-heur">Loading...</span>
   </li>
 </ul>
+
+<ul>
+  <li>apple</li>
+  <li>banana</li>
+  <li>cherry</li>
+</ul>
