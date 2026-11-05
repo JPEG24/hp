@@ -1,43 +1,46 @@
 document.addEventListener("DOMContentLoaded", async () => {
-  const ratingElement = document.querySelector("#atcoder-rating");
+  const elements = {
+    algorithm: document.querySelector("#atcoder-algo"),
+    heuristic: document.querySelector("#atcoder-heur")
+  };
 
-  if (!ratingElement) return;
+  if (!elements.algorithm && !elements.heuristic) return;
+
+  const getColor = rating => {
+    if (rating < 400) return "#808080";
+    if (rating < 800) return "#804000";
+    if (rating < 1200) return "#008000";
+    if (rating < 1600) return "#00C0C0";
+    if (rating < 2000) return "#0000FF";
+    if (rating < 2400) return "#C0C000";
+    if (rating < 2800) return "#FF8000";
+    return "#FF0000";
+  };
 
   try {
     const response = await fetch("/api/rating");
 
-    if (!response.ok) {
-      throw new Error(`HTTP ${response.status}`);
-    }
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
 
     const data = await response.json();
-    const rating = data.rating;
 
-    if (rating === null) {
-      ratingElement.textContent = "Unrated";
-      return;
+    for (const [type, element] of Object.entries(elements)) {
+      if (!element) continue;
+
+      const rating = data[type];
+
+      if (rating === null) {
+        element.textContent = "Unrated";
+      } else {
+        element.textContent = rating;
+        element.style.color = getColor(rating);
+      }
+    }
+  } catch (error) {
+    for (const element of Object.values(elements)) {
+      if (element) element.textContent = "取得失敗";
     }
 
-    ratingElement.textContent = rating;
-
-    const colors = [
-      [400, "#808080"],
-      [800, "#804000"],
-      [1200, "#008000"],
-      [1600, "#00C0C0"],
-      [2000, "#0000FF"],
-      [2400, "#C0C000"],
-      [2800, "#FF8000"],
-      [Infinity, "#FF0000"]
-    ];
-
-    const color = colors.find(([border]) => rating < border)[1];
-
-    ratingElement.style.color = color;
-		ratingElement.style.fontWeight = "bold";
-
-  } catch (error) {
-    ratingElement.textContent = "取得失敗";
     console.error("AtCoder API:", error);
   }
 });
