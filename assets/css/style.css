@@ -113,14 +113,9 @@ h2 {
    Home
    ========================= */
 
-.rating-list {
-  list-style-type: disc;
-  padding-left: 24px;
-}
-
 .rating-row span:first-child {
   display: inline-block;
-  width: 200px;
+  width: 120px;
 }
 
 .post-list {

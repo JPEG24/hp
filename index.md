@@ -18,10 +18,8 @@ title: ホーム
 </ul>
 
 # Works
-- [cp-library](https://github.com/JPEG24/cp-library)
+- <a href="https://github.com/JPEG24/cp-library" target="_blank" rel="noopener noreferrer">cp-library</a>
 
 # Links
-<ul>
-  <li><a href="https://x.com/tgnfoh" target="_blank" rel="noopener noreferrer">X</a></li>
-  <li><a href="https://atcoder.jp/users/WebP" target="_blank" rel="noopener noreferrer">AtCoder</a></li>
-</ul>
+- <a href="https://x.com/tgnfoh" target="_blank" rel="noopener noreferrer">X</a>
+- <a href="https://atcoder.jp/users/WebP" target="_blank" rel="noopener noreferrer">AtCoder</a>
