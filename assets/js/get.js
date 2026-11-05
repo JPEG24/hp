@@ -34,11 +34,10 @@ document.addEventListener("DOMContentLoaded", async () => {
       } else {
         element.textContent = rating;
         element.style.color = getColor(rating);
-				element.style.fontWeight = "bold";
 				element.style.fontFamily = '"Squada One", sans-serif';
-				element.style.fontSize = "50px";
+				element.style.fontSize = "20px";
       }
-    }
+		}
   } catch (error) {
     for (const element of Object.values(elements)) {
       if (element) element.textContent = "取得失敗";
