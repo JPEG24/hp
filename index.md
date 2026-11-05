@@ -18,13 +18,12 @@ title: ホーム
 </ul>
 
 # Works
-<dl>
-  <dt><a href="cp-library" target="_blank" rel="noopener noreferrer">cp-library</a></dt>
-  <dd>競プロのライブラリです。自分もあんまり使いません。</dd>
-</dl>
+- [cp-library](https://github.com/JPEG24/cp-library)
+
+競プロのライブラリです。自分もあんまり使ってません。
 
 # Links
-<ul class="link-list">
+<ul>
   <li><a href="https://x.com/tgnfoh" target="_blank" rel="noopener noreferrer">X</a></li>
   <li><a href="https://atcoder.jp/users/WebP" target="_blank" rel="noopener noreferrer">AtCoder</a></li>
 </ul>
