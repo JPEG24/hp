@@ -447,7 +447,8 @@ h2 {
     color-scheme: dark;
 
     --ink: #e1e8ec;
-    --muted: #9baab5;
+    --ink2: #9baab5;
+    --muted: #4b5c6b;
     --paper: #151c22;
     --surface: #1e2932;
     --line: #35434d;
