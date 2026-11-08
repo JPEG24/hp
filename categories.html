@@ -1,0 +1,37 @@
+---
+layout: page
+title: Categories
+permalink: /categories/
+---
+
+<h2>カテゴリ一覧</h2>
+
+<ul class="category-list">
+  {% for category in site.categories %}
+    <li>
+      <a href="#{{ category[0] | slugify }}">
+        {{ category[0] }} ({{ category[1].size }})
+      </a>
+    </li>
+  {% endfor %}
+</ul>
+
+<hr>
+
+<h2>カテゴリ別記事一覧</h2>
+
+{% for category in site.categories %}
+  <section id="{{ category[0] | slugify }}" class="category-section">
+    <h3>{{ category[0] }}</h3>
+
+    <ul>
+      {% for post in category[1] %}
+        <li>
+          <a href="{{ post.url | relative_url }}">
+            {{ post.title }}
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </section>
+{% endfor %}
