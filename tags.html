@@ -6,33 +6,31 @@ permalink: /tags/
 
 <h2>タグ一覧</h2>
 
-<div class="category-tags">
-  {% for category in site.categories %}
-    <a
-      class="category-tag"
-      href="#{{ category[0] | slugify }}"
-    >
-      {{ category[0] }}
-      <span>{{ category[1].size }}</span>
-    </a>
+<ul class="tag-list">
+  {% for tag in site.tags %}
+    <li>
+      <a href="#{{ tag[0] | slugify }}">
+        {{ tag[0] }} ({{ tag[1].size }})
+      </a>
+    </li>
   {% endfor %}
-</div>
+</ul>
 
 <hr>
 
+<h2>タグ別記事一覧</h2>
+
 {% for tag in site.tags %}
-  <section id="{{ tag | slugify }}" class="category-section">
-    <h3>{{ tag }}</h3>
+  <section id="{{ tag[0] | slugify }}" class="tag-section">
+    <h3>{{ tag[0] }}</h3>
 
     <ul>
-      {% for post in site.posts %}
-        {% if post.tags contains tag %}
-          <li>
-            <a href="{{ post.url | relative_url }}">
-              {{ post.title }}
-            </a>
-          </li>
-        {% endif %}
+      {% for post in tag[1] %}
+        <li>
+          <a href="{{ post.url | relative_url }}">
+            {{ post.title }}
+          </a>
+        </li>
       {% endfor %}
     </ul>
   </section>
