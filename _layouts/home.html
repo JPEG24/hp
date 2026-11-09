@@ -14,10 +14,7 @@ layout: default
 
     <div class="tag-list">
       {% for tag in site.tags %}
-        <a
-          class="tag"
-          href="{{ '/tags/' | relative_url }}#{{ tag[0] | slugify }}"
-        >
+        <a class="tag" href="{{ '/tags/' | relative_url }}#{{ tag[0] | slugify }}">
           {{ tag[0] }}
           <span>{{ tag[1].size }}</span>
         </a>
