@@ -7,7 +7,7 @@ layout: default
     <p class="eyebrow">{{ page.date | date: "%Y.%m.%d" }}</p>
     <div class="post-title">{{ page.title | escape }}</div>
     {% if page.tags.size > 0 %}
-      <div class="tags-post">
+      <div class="tag-list-post">
         {% for tag in page.tags %}
           <a
             class="tag"
