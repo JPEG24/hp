@@ -32,7 +32,7 @@ layout: default
           {{ post.date | date: "%Y年%m月%d日" }}
         </time>
 
-        <a href="{{ post.url | relative_url }}">
+        <a class="post-title-link" href="{{ post.url | relative_url }}">
           {{ post.title | escape }}
         </a>
 

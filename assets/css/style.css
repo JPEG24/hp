@@ -153,7 +153,7 @@ h3 {
   font-size: 12px;
 }
 
-.post-list a {
+.post-list .post-title-link {
   font-size: 18px;
   text-decoration: none;
 }
@@ -163,6 +163,10 @@ h3 {
   color: var(--muted);
   font-size: 13px;
 }
+
+/* =========================
+   Tags
+   ========================= */
 
 .home-tags {
   margin: 20px 0;
@@ -221,9 +225,14 @@ h3 {
   color: white;
 }
 
-.tag span {
+.tag-list .tag span {
   font-size: 0.8rem;
   opacity: 0.7;
+}
+
+ul.tag-list {
+  list-style: none;
+  padding: 0;
 }
 
 .tag-section {
@@ -286,8 +295,9 @@ h3 {
 }
 
 /* =========================
-    Post Contents
+   Post Contents
    ========================= */
+
 .post-content {
   grid-column: 1;
   grid-row: 1;
@@ -296,6 +306,7 @@ h3 {
 /* =========================
    Table of contents
    ========================= */
+
 .toc {
   grid-column: 2;
   grid-row: 1;
