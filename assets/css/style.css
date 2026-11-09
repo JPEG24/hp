@@ -181,7 +181,7 @@ h3 {
   gap: 8px;
 }
 
-.post-list .category-tag {
+.category-tags .category-tag {
   display: inline-flex;
   align-items: center;
   gap: 6px;
