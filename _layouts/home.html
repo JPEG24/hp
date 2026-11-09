@@ -8,7 +8,9 @@ layout: default
 <div class="post-list">
 <h2>記事一覧</h2>
 <div class="home-categories">
-  <h3>Categories</h3>
+  <a href="{{ '/categories/' | relative_url }}">
+    <h3>Categories</h3>
+  </a>
 
   <div class="category-tags">
     {% for category in site.categories %}
@@ -25,9 +27,30 @@ layout: default
 <ul>
   {% for post in site.posts %}
     <li>
-      <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y年%m月%d日" }}</time>
-      <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-      {% if post.excerpt %}<p>{{ post.excerpt | strip_html | truncate: 120 }}</p>{% endif %}
+      <time datetime="{{ post.date | date_to_xmlschema }}">
+        {{ post.date | date: "%Y年%m月%d日" }}
+      </time>
+
+      <a href="{{ post.url | relative_url }}">
+        {{ post.title | escape }}
+      </a>
+
+      {% if post.categories.size > 0 %}
+        <div class="category-tags">
+          {% for category in post.categories %}
+            <a
+              class="category-tag"
+              href="{{ '/categories/' | relative_url }}#{{ category | slugify }}"
+            >
+              {{ category }}
+            </a>
+          {% endfor %}
+        </div>
+      {% endif %}
+
+      {% if post.excerpt %}
+        <p>{{ post.excerpt | strip_html | truncate: 120 }}</p>
+      {% endif %}
     </li>
   {% else %}
     <li>まだ記事はありません。</li>
