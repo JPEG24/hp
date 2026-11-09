@@ -110,6 +110,11 @@ h2 {
   margin: 40px 0 16px;
 }
 
+h3 {
+  font-size: clamp(16px, 2vw, 20px);
+  margin: 32px 0 16px;
+}
+
 /* =========================
    Home
    ========================= */
@@ -128,7 +133,7 @@ h2 {
 }
 
 .post-list h2 {
-  margin: 0;
+  margin-top: 0;
 }
 
 .post-list ul {
@@ -160,7 +165,7 @@ h2 {
 }
 
 .home-categories {
-  margin: 28px 0;
+  margin: 20px 0;
 }
 
 .home-categories h3 {
