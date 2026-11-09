@@ -7,9 +7,21 @@ layout: default
 
 <div class="post-list">
 <h2>記事一覧</h2>
-<a href="{{ '/categories/' | relative_url }}">
-  <h3>カテゴリ一覧</h3>
-</a>
+<div class="home-categories">
+  <h3>Categories</h3>
+
+  <div class="category-tags">
+    {% for category in site.categories %}
+      <a
+        class="category-tag"
+        href="{{ '/categories/' | relative_url }}#{{ category[0] | slugify }}"
+      >
+        {{ category[0] }}
+        <span>{{ category[1].size }}</span>
+      </a>
+    {% endfor %}
+  </div>
+</div>
 <ul>
   {% for post in site.posts %}
     <li>
