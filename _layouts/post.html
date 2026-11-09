@@ -6,6 +6,18 @@ layout: default
   <header class="post-header">
     <p class="eyebrow">{{ page.date | date: "%Y.%m.%d" }}</p>
     <div class="post-title">{{ page.title | escape }}</div>
+    {% if page.categories.size > 0 %}
+      <div class="category-tags">
+        {% for category in page.categories %}
+          <a
+            class="category-tag"
+            href="{{ '/categories/' | relative_url }}#{{ category | slugify }}"
+          >
+            {{ category }}
+          </a>
+        {% endfor %}
+      </div>
+    {% endif %}
   </header>
 
   <div class="post-layout">
