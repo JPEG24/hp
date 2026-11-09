@@ -164,24 +164,24 @@ h3 {
   font-size: 13px;
 }
 
-.home-categories {
+.home-tags {
   margin: 20px 0;
 }
 
-.home-categories h3 {
+.home-tags h3 {
   font-size: 1.2rem;
   color: var(--text-color);
   margin-bottom: 12px;
   border: none;
 }
 
-.category-tags {
+.tags {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
 }
 
-.category-tags .category-tag {
+.tags .tag {
   display: inline-flex;
   align-items: center;
   gap: 6px;
@@ -195,7 +195,7 @@ h3 {
   transition: background 0.2s, color 0.2s;
 }
 
-.category-tags-post .category-tag {
+.tags-post .tag {
   display: inline-flex;
   align-items: center;
   gap: 6px;

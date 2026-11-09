@@ -1,0 +1,39 @@
+---
+layout: page
+title: Tags
+permalink: /tags/
+---
+
+<h2>タグ一覧</h2>
+
+<div class="category-tags">
+  {% for category in site.categories %}
+    <a
+      class="category-tag"
+      href="#{{ category[0] | slugify }}"
+    >
+      {{ category[0] }}
+      <span>{{ category[1].size }}</span>
+    </a>
+  {% endfor %}
+</div>
+
+<hr>
+
+{% for tag in site.tags %}
+  <section id="{{ tag | slugify }}" class="category-section">
+    <h3>{{ tag }}</h3>
+
+    <ul>
+      {% for post in site.posts %}
+        {% if post.tags contains tag %}
+          <li>
+            <a href="{{ post.url | relative_url }}">
+              {{ post.title }}
+            </a>
+          </li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </section>
+{% endfor %}
