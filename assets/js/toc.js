@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const content = document.querySelector(".post-content");
+  const content = document.querySelector(".article-content");
   const toc = document.querySelector("#toc-list");
 
   if (!content || !toc) return;

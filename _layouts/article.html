@@ -9,12 +9,7 @@ layout: default
     {% if page.tags.size > 0 %}
       <div class="tag-list-article">
         {% for tag in page.tags %}
-          <a
-            class="tag"
-            href="{{ '/tags/' | relative_url }}#{{ tag | slugify }}"
-          >
-            {{ tag }}
-          </a>
+          <div class="tag">{{ tag }}</div>
         {% endfor %}
       </div>
     {% endif %}
