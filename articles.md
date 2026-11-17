@@ -5,13 +5,9 @@ permalink: /articles/
 ---
 
 <div class="post-list">
-  <h2>記事一覧</h2>
+  <h1>記事一覧</h1>
 
   <div class="home-tags">
-    <a href="{{ '/tags/' | relative_url }}">
-      <h3>Tags</h3>
-    </a>
-
     <div class="tag-list">
       {% for tag in site.tags %}
         <a class="tag" href="{{ '/tags/' | relative_url }}#{{ tag[0] | slugify }}">
