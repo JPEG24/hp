@@ -1,6 +1,7 @@
 ---
-layout: home
+layout: default
 title: ホーム
+permalink: /
 ---
 
 競技プログラミングをしています！

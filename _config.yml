@@ -9,9 +9,10 @@ theme: minima
 plugins:
   - jekyll-feed
 
-permalink: /posts/:title/
+permalink: /articles/:title/
 
 header_pages:
+  - articles.md
   - about.md
 
 defaults:
