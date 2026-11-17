@@ -2,12 +2,12 @@
 layout: default
 ---
   
-<article class="post">
-  <header class="post-header">
+<article class="article">
+  <header class="article-header">
     <p class="eyebrow">{{ page.date | date: "%Y.%m.%d" }}</p>
-    <div class="post-title">{{ page.title | escape }}</div>
+    <div class="article-title">{{ page.title | escape }}</div>
     {% if page.tags.size > 0 %}
-      <div class="tag-list-post">
+      <div class="tag-list-article">
         {% for tag in page.tags %}
           <a
             class="tag"
@@ -20,8 +20,8 @@ layout: default
     {% endif %}
   </header>
 
-  <div class="post-layout">
-    <div class="post-content">
+  <div class="article-layout">
+    <div class="article-content">
       {{ content }}
     </div>
 

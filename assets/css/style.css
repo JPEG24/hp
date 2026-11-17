@@ -245,20 +245,20 @@ button.tag {
 }
 
 /* =========================
-   Post
+   Article
    ========================= */
 
-.post {
+.article {
   background: var(--surface);
   padding: clamp(24px, 6vw, 65px);
   border: 1px solid var(--line);
 }
 
-.post-header {
+.article-header {
   margin-bottom: 35px;
 }
 
-.post-header .post-title {
+.article-header .article-title {
   font-size: clamp(24px, 4vw, 36px);
   font-weight: 400;
   line-height: 1.5;
@@ -266,32 +266,32 @@ button.tag {
   margin: 8px 0;
 }
 
-.post-content {
+.article-content {
   min-width: 0;
   overflow-wrap: anywhere;
 }
 
-.post-content img {
+.article-content img {
   max-width: 100%;
   height: auto;
 }
 
-.post-content pre {
+.article-content pre {
   overflow-x: auto;
   padding: 16px;
   background: var(--code-bg);
   border-radius: 8px;
 }
 
-.post-content code {
+.article-content code {
   font-family: ui-monospace, Consolas, monospace;
 }
 
 /* =========================
-   Post layout
+   Article layout
    ========================= */
 
-.post-layout {
+.article-layout {
   display: grid;
   grid-template-columns: minmax(0, 1fr) 220px;
   gap: 40px;
@@ -299,10 +299,10 @@ button.tag {
 }
 
 /* =========================
-   Post Contents
+   article Contents
    ========================= */
 
-.post-content {
+.article-content {
   grid-column: 1;
   grid-row: 1;
 }
@@ -417,7 +417,7 @@ button.tag {
    ========================= */
 
 @media (max-width: 800px) {
-  .post-layout {
+  .article-layout {
     grid-template-columns: 1fr;
     gap: 25px;
   }
@@ -430,7 +430,7 @@ button.tag {
     max-height: none;
   }
 
-  .post-content {
+  .article-content {
     grid-column: 1;
     grid-row: 2;
   }
