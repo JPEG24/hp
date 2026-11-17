@@ -34,8 +34,10 @@
         <img src="{{ '/assets/images/icon.png' | relative_url }}" class="site-icon">
         <span>{{ site.title }}</span>
       </a>
-      <nav><a href="{{ '/articles/' | relative_url }}">記事一覧</a></nav>
-      <nav><a href="{{ '/about/' | relative_url }}">このページについて</a></nav>
+      <nav class = "site-nav">
+        <a href="{{ '/articles/' | relative_url }}">記事一覧</a>
+        <a href="{{ '/about/' | relative_url }}">このページについて</a>
+      </nav>
     </header>
     <main class="site-main">
       {{ content }}

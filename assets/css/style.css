@@ -52,6 +52,19 @@ a {
   border-bottom: 1px solid var(--line);
 }
 
+.site-header nav {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  flex: 0 0 auto;
+}
+
+.site-header nav a {
+  color: var(--muted);
+  font-size: 13px;
+  text-decoration: none;
+}
+
 .site-title {
   color: var(--ink);
   text-decoration: none;
@@ -67,12 +80,6 @@ a {
   height: 32px;
   border-radius: 50%;
   object-fit: cover;
-}
-
-.site-header nav a {
-  color: var(--muted);
-  font-size: 13px;
-  text-decoration: none;
 }
 
 .site-main {
