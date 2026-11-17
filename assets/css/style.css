@@ -122,50 +122,43 @@ h3 {
   margin: 32px 0 16px;
 }
 
-/* =========================
-   Home
-   ========================= */
-
 .rating-row span:first-child {
   display: inline-block;
   width: 160px;
 }
 
-.article-list h2 {
-  margin-top: 0;
-}
+/* =========================
+   Article list
+   ========================= */
 
-.article-list ul {
+#article-list {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.article-list li {
+.article-item {
   padding: 18px 0;
   border-bottom: 1px solid var(--line);
 }
 
-.article-list time {
+.article-item time {
   display: block;
   color: var(--muted);
   font-size: 12px;
 }
 
-.article-list .article-title-link {
+.article-title-link {
+  display: block;
   font-size: 18px;
   text-decoration: none;
 }
 
-.article-list p {
+.article-item p {
   margin: 5px 0 0;
   color: var(--muted);
   font-size: 13px;
 }
-
-/* =========================
-   Tags
-   ========================= */
 
 .tag-list {
   display: flex;
