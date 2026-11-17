@@ -131,33 +131,33 @@ h3 {
   width: 160px;
 }
 
-.post-list h2 {
+.article-list h2 {
   margin-top: 0;
 }
 
-.post-list ul {
+.article-list ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.post-list li {
+.article-list li {
   padding: 18px 0;
   border-bottom: 1px solid var(--line);
 }
 
-.post-list time {
+.article-list time {
   display: block;
   color: var(--muted);
   font-size: 12px;
 }
 
-.post-list .post-title-link {
+.article-list .article-title-link {
   font-size: 18px;
   text-decoration: none;
 }
 
-.post-list p {
+.article-list p {
   margin: 5px 0 0;
   color: var(--muted);
   font-size: 13px;
@@ -187,14 +187,14 @@ h3 {
   transition: background 0.2s, color 0.2s;
 }
 
-.tag-list-post {
+.tag-list-article {
   display: flex;
   flex-wrap: wrap;
   gap: 6px;
   margin-top: 6px;
 }
 
-.tag-list-post .tag {
+.tag-list-article .tag {
   display: inline-flex;
   align-items: center;
   padding: 3px 9px;
@@ -208,7 +208,7 @@ h3 {
 }
 
 .tag-list .tag:hover,
-.tag-list-post .tag:hover {
+.tag-list-article .tag:hover {
   background: var(--accent);
   color: white;
 }

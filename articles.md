@@ -38,12 +38,12 @@ permalink: /articles/
           {{ post.date | date: "%Y年%m月%d日" }}
         </time>
 
-        <a class="post-title-link" href="{{ post.url | relative_url }}">
+        <a class="article-title-link" href="{{ post.url | relative_url }}">
           {{ post.title | escape }}
         </a>
 
         {% if post.tags.size > 0 %}
-          <div class="tag-list-post">
+          <div class="tag-list-article">
             {% for tag in post.tags %}
               <button
                 class="tag filter-tag"
