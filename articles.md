@@ -66,4 +66,4 @@ permalink: /articles/
   該当する記事はありません。
 </p>
 
-<script src="{{ '/assets/js/article-filter.js' | relative_url }}" defer></script>
+<script src="{{ '/assets/js/tag-filter.js' | relative_url }}" defer></script>
